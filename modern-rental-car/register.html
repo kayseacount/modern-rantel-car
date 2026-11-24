@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><title>Register - Modern Rental Car</title></head>
+<body class="d-flex align-items-center min-vh-100 py-4">
+<main class="container" style="max-width:480px">
+  <a href="index.html" class="d-block text-center mb-3 h4 text-primary text-decoration-none">Modern Rental Car</a>
+  <div class="card"><div class="card-body p-4">
+    <h1 class="h4 mb-3">Create your account</h1>
+    <div id="msg"></div>
+    <form id="regForm" novalidate>
+      <div class="mb-3"><label class="form-label" for="name">Full name</label><input id="name" class="form-control" required minlength="3" autocomplete="name"><div class="invalid-feedback">Enter your full name (at least 3 characters).</div></div>
+      <div class="mb-3"><label class="form-label" for="email">Email</label><input id="email" type="email" class="form-control" required autocomplete="email"><div class="invalid-feedback">Enter a valid email that is not already registered.</div></div>
+      <div class="mb-3"><label class="form-label" for="phone">Phone</label><input id="phone" type="tel" class="form-control" required pattern="\+?[0-9][0-9 ]{6,14}" placeholder="+252 63 4000000" autocomplete="tel"><div class="invalid-feedback">Enter a phone number with 7 to 15 digits.</div></div>
+      <div class="mb-3"><label class="form-label" for="password">Password</label><input id="password" type="password" class="form-control" required minlength="6" autocomplete="new-password"><div class="invalid-feedback">Use at least 6 characters.</div></div>
+      <div class="mb-3"><label class="form-label" for="confirm">Confirm password</label><input id="confirm" type="password" class="form-control" required autocomplete="new-password"><div class="invalid-feedback">Passwords must match.</div></div>
+      <button class="btn btn-primary w-100">Register</button>
+    </form>
+    <p class="small mt-3 mb-0">Already registered? <a href="login.html">Log in</a></p>
+  </div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="js/store.js"></script><script src="js/auth.js"></script>
+</body></html>

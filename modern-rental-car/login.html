@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><title>Log in - Modern Rental Car</title></head>
+<body class="d-flex align-items-center min-vh-100 py-4">
+<main class="container" style="max-width:440px">
+  <a href="index.html" class="d-block text-center mb-3 h4 text-primary text-decoration-none">Modern Rental Car</a>
+  <div class="card"><div class="card-body p-4">
+    <h1 class="h4 mb-3">Log in</h1>
+    <div id="msg"></div>
+    <form id="loginForm" novalidate>
+      <div class="mb-3"><label class="form-label" for="email">Email</label><input id="email" type="email" class="form-control" required autocomplete="email"><div class="invalid-feedback">Enter a valid email address.</div></div>
+      <div class="mb-3"><label class="form-label" for="password">Password</label><input id="password" type="password" class="form-control" required minlength="6" autocomplete="current-password"><div class="invalid-feedback">Enter your password (at least 6 characters).</div></div>
+      <button class="btn btn-primary w-100">Log in</button>
+    </form>
+    <p class="small mt-3 mb-1">New here? <a href="register.html">Create an account</a></p>
+    <p class="small text-secondary mb-0">Demo: admin@mrc.test / admin123, user@mrc.test / user123</p>
+  </div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="js/store.js"></script><script src="js/auth.js"></script>
+</body></html>

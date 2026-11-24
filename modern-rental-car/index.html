@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><title>Modern Rental Car</title></head>
+<body>
+<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">Modern Rental Car</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="#fleet">Our cars</a></li></ul>
+      <div class="d-flex gap-2" id="navAuth"></div>
+    </div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="container">
+    <div class="col-lg-7">
+      <h1 class="display-4 fw-bold">Find your perfect car</h1>
+      <p class="lead text-secondary">Well-kept cars at clear daily prices. Pick a car, choose your dates, and we confirm your booking.</p>
+      <a href="#fleet" class="btn btn-primary btn-lg">Browse cars</a>
+    </div>
+  </div>
+</header>
+<section id="fleet" class="container py-5">
+  <div class="d-flex flex-wrap justify-content-between align-items-end mb-3 gap-2">
+    <h2 class="h3 mb-0">Our cars</h2><span class="text-secondary" id="count"></span>
+  </div>
+  <form class="row g-2 mb-4" onsubmit="return false">
+    <div class="col-12 col-md-5"><label class="visually-hidden" for="q">Search</label><input id="q" class="form-control" placeholder="Search by name or brand"></div>
+    <div class="col-6 col-md-4"><label class="visually-hidden" for="cat">Category</label><select id="cat" class="form-select"></select></div>
+    <div class="col-6 col-md-3"><label class="visually-hidden" for="max">Max price per day</label><input id="max" type="number" min="1" class="form-control" placeholder="Max $ per day"></div>
+  </form>
+  <div class="row g-3" id="grid"></div>
+</section>
+<footer class="border-top py-4 text-center text-secondary small">Modern Rental Car</footer>
+<div class="modal fade" id="dm" tabindex="-1" aria-labelledby="dmTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title h5" id="dmTitle"></h2><button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body" id="dmBody"></div>
+    <div class="modal-footer"><button class="btn btn-primary" id="dmGo">Reserve this car</button></div>
+  </div></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="js/store.js"></script><script src="js/public.js"></script>
+</body></html>
